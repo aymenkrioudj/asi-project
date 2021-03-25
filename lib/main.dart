@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:asiproject/constants.dart';
 import 'package:asiproject/screens/splashPage.dart';
+import 'package:asiproject/screens/homePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Absence Management',
       theme: ThemeData(
                 primaryColor: colorBlue1,
         scaffoldBackgroundColor: colorWhite,
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       home: SplashPage(),
       routes: {
+        HomePage.id: (context) => HomePage(),
 
       },
     );
