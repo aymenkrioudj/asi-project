@@ -15,12 +15,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
+
   List sessions = <Session>[
-    Session("ASI Cours", "Fouad Dahak", "(AP2)", DateTime.now(), DateTime.now()),
-    Session("BDA Cours", "Karima Amrouche", "(A3)", DateTime.now(), DateTime.now()),
-    Session("ASI TD", "Sabrina Abdelaoui", "(CP7)", DateTime.now(), DateTime.now()),
-    Session("PGI TD", "Selma Khouri", "(CP9)", DateTime.now(), DateTime.now()),
+    Session("ASI Cours", "Fouad Dahak", "(AP2)", TimeOfDay(hour: 8, minute: 30), TimeOfDay(hour: 10, minute: 30)),
+    Session("BDA Cours", "Karima Amrouche", "(A3)", TimeOfDay(hour: 10, minute: 40), TimeOfDay(hour: 12, minute: 10)),
+    Session("ASI TD", "Sabrina Abdelaoui", "(CP7)", TimeOfDay(hour: 13, minute: 30), TimeOfDay(hour: 15, minute: 00)),
+    Session("PGI TD", "Selma Khouri", "(CP9)", TimeOfDay(hour: 15, minute: 10), TimeOfDay(hour: 16, minute: 40)),
   ];
 
   @override
@@ -50,12 +50,12 @@ class _HomePageState extends State<HomePage> {
           children: [
             Column(
               children: [
-                for (var i = 0; i < sessions.length; i++) 
+                for (var i = 0; i < sessions.length; i++)
                   Timeline(
                     i,
                     sessions[i].module,
                     sessions[i].prof,
-                    sessions[i].salle, 
+                    sessions[i].salle,
                     sessions[i].dateD,
                     sessions[i].dateF,
                   ),
@@ -64,6 +64,7 @@ class _HomePageState extends State<HomePage> {
             ),
             GestureDetector(
               onTap: () {
+                print(TimeOfDay.now());
                 Navigator.pushNamed(context, ScanPage.id);
               },
               child: Column(
@@ -88,7 +89,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            
           ],
         ),
       ),
@@ -99,12 +99,11 @@ class _HomePageState extends State<HomePage> {
 
 class Session {
   Session(this.module,this.prof,this.salle,this.dateD,this.dateF);
-  
   String module;
   String prof;
   String salle;
-  DateTime dateD;
-  DateTime dateF;
+  TimeOfDay dateD;
+  TimeOfDay dateF;
 }
 
 class Timeline extends StatelessWidget {
@@ -112,8 +111,8 @@ class Timeline extends StatelessWidget {
   final String module;
   final String prof;
   final String salle;
-  final DateTime dateD;
-  final DateTime dateF;
+  final TimeOfDay dateD;
+  final TimeOfDay dateF;
 
   Timeline(this.index,this.module,this.prof,this.salle,this.dateD,this.dateF);
 
@@ -130,6 +129,7 @@ class Timeline extends StatelessWidget {
                 : ContentCard(module,prof,salle,dateD,dateF),
               node: TimelineNode(
                 indicator: DotIndicator(
+                  color: colorBlue2,
                   child: Icon(
                     LineIcons.clockAlt,
                     color: colorWhite, 
@@ -150,7 +150,7 @@ class Timeline extends StatelessWidget {
 }
 
 class ContentTime extends StatelessWidget {
-  final DateTime date;
+  final TimeOfDay date;
   ContentTime(this.date);
 
   @override
@@ -169,18 +169,37 @@ class ContentTime extends StatelessWidget {
   }
 }
 
-class ContentCard extends StatelessWidget {
+class ContentCard extends StatefulWidget {
   final String module;
   final String prof;
   final String salle;
-  final DateTime dateD;
-  final DateTime dateF;
+  final TimeOfDay dateD;
+  final TimeOfDay dateF;
 
   ContentCard(this.module,this.prof,this.salle,this.dateD,this.dateF);
 
   @override
+  _ContentCardState createState() => _ContentCardState();
+}
+
+class _ContentCardState extends State<ContentCard> {
+  compareDate(TimeOfDay dd,TimeOfDay df){
+    int dd_to_min = dd.hour*60 + dd.minute;
+    int df_to_min = df.hour*60 + df.minute;
+    int now_to_min = (TimeOfDay.now().hour+1)*60 + TimeOfDay.now().minute;
+    
+    if (now_to_min>=dd_to_min && now_to_min<df_to_min) {
+      return true;
+    }
+    return false;
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Card(
+                color: compareDate(widget.dateD, widget.dateF)
+                  ? colorBlue3
+                  : Colors.white,
                 child: Container(
                   padding: EdgeInsets.all(5.0),
                   child: Column(
@@ -188,27 +207,33 @@ class ContentCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        module,
+                        widget.module,
                         style:TextStyle(
-                        color: colorBlue1,
+                        color: compareDate(widget.dateD, widget.dateF)
+                          ? Colors.white
+                          : colorBlue1,
                         fontFamily: "Titre1",
                         fontWeight: FontWeight.bold,
                         fontSize: MediaQuery.of(context).size.height / 40,
                         ),
                       ),
                       Text(
-                        prof,
+                        widget.prof,
                         style:TextStyle(
-                        color: colorBlue1,
+                        color: compareDate(widget.dateD, widget.dateF)
+                          ? Colors.white
+                          : colorBlue1,
                         fontFamily: "Titre1",
                         //fontWeight: FontWeight.bold,
                         fontSize: MediaQuery.of(context).size.height / 50,
                         ),
                       ),
                       Text(
-                        salle,
+                        widget.salle,
                         style:TextStyle(
-                        color: colorBlue1,
+                        color: compareDate(widget.dateD, widget.dateF)
+                          ? Colors.white
+                          : colorBlue1,
                         fontFamily: "Titre1",
                         //fontWeight: FontWeight.bold,
                         fontSize: MediaQuery.of(context).size.height / 60,
