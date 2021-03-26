@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:asiproject/constants.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:qr_flutter/qr_flutter.dart';
+
 
 class ScanPage extends StatefulWidget {
   static String id = "scan";
