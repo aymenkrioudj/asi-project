@@ -305,8 +305,8 @@ class _ContentCardState extends State<ContentCard> {
 compareDate(TimeOfDay dd,TimeOfDay df){
     int dd_to_min = dd.hour*60 + dd.minute;
     int df_to_min = df.hour*60 + df.minute;
-    int now_to_min = (TimeOfDay.now().hour+1)*60 + TimeOfDay.now().minute;
-    
+    int now_to_min = (TimeOfDay.now().hour)*60 + TimeOfDay.now().minute;
+
     if (now_to_min>=dd_to_min && now_to_min <df_to_min) {
       return true;
     }
