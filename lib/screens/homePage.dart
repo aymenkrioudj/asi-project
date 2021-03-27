@@ -1,9 +1,16 @@
+import 'dart:async';
+import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:asiproject/constants.dart';
-import 'package:bubble_timeline/bubble_timeline.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:asiproject/screens/scanPage.dart';
 import 'package:timelines/timelines.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:cool_alert/cool_alert.dart';
+
+
 
 
 
@@ -22,6 +29,61 @@ class _HomePageState extends State<HomePage> {
     Session("ASI TD", "Sabrina Abdelaoui", "(CP7)", TimeOfDay(hour: 13, minute: 30), TimeOfDay(hour: 15, minute: 00)),
     Session("PGI TD", "Selma Khouri", "(CP9)", TimeOfDay(hour: 15, minute: 10), TimeOfDay(hour: 16, minute: 40)),
   ];
+
+//TODO : les methodes de scan QR code 
+  
+  String _scanBarcode = 'Unknown QR code"';
+
+  void initState() {
+    super.initState();
+  }
+
+  Future<void> scanQR() async {
+    String barcodeScanRes;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    try {
+      barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+          "#ff6666", "Cancel", true, ScanMode.QR);
+      print(barcodeScanRes);
+    } on PlatformException {
+      barcodeScanRes = 'Failed to get QR code.';
+    }
+
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
+
+    setState(() {
+      _scanBarcode = barcodeScanRes;
+      String datenow = DateFormat('yyyy-MM-dd').format(DateTime.now());
+      String hournow = DateFormat('kk:mm:ss').format(DateTime.now());
+      bool isSession = false;
+      if (_scanBarcode=="ASI Cours" && compareDate(sessions[0].dateD, sessions[0].dateF)) { isSession= true;}
+      if (_scanBarcode=="BDA Cours" && compareDate(sessions[1].dateD, sessions[1].dateF)) { isSession= true;}
+      if (_scanBarcode=="ASI TD" && compareDate(sessions[2].dateD, sessions[2].dateF)) { isSession= true;}
+      if (_scanBarcode=="PGI TD" && compareDate(sessions[3].dateD, sessions[3].dateF)) { isSession= true;}
+      if (_scanBarcode == "-1") {
+        //cancel : do nothing
+      } else {
+        CoolAlert.show(
+                        context: context,
+                        type: isSession
+                          ? CoolAlertType.success
+                          : CoolAlertType.error,
+                        title: isSession
+                          ? "Confirmed presence to :"
+                          : "Qr code not validated",
+                        text: isSession
+                          ?_scanBarcode + "\n" + hournow + "\n" + datenow
+                          : "This session does not currently exist or maybe this QR code does not correspond to this session",
+                        backgroundColor: colorBlue1,
+                        confirmBtnColor: colorBlue1,
+                        //confirmBtnTap: (){}
+                      );
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -64,8 +126,9 @@ class _HomePageState extends State<HomePage> {
             ),
             GestureDetector(
               onTap: () {
-                print(TimeOfDay.now());
-                Navigator.pushNamed(context, ScanPage.id);
+                scanQR();
+                //print(TimeOfDay.now());
+                //Navigator.pushNamed(context, ScanPage.id);
               },
               child: Column(
                 children: [
@@ -182,17 +245,9 @@ class ContentCard extends StatefulWidget {
   _ContentCardState createState() => _ContentCardState();
 }
 
+
 class _ContentCardState extends State<ContentCard> {
-  compareDate(TimeOfDay dd,TimeOfDay df){
-    int dd_to_min = dd.hour*60 + dd.minute;
-    int df_to_min = df.hour*60 + df.minute;
-    int now_to_min = (TimeOfDay.now().hour+1)*60 + TimeOfDay.now().minute;
-    
-    if (now_to_min>=dd_to_min && now_to_min<df_to_min) {
-      return true;
-    }
-    return false;
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -245,3 +300,15 @@ class _ContentCardState extends State<ContentCard> {
               );
   }
 }
+
+
+compareDate(TimeOfDay dd,TimeOfDay df){
+    int dd_to_min = dd.hour*60 + dd.minute;
+    int df_to_min = df.hour*60 + df.minute;
+    int now_to_min = (TimeOfDay.now().hour+1)*60 + TimeOfDay.now().minute;
+    
+    if (now_to_min>=dd_to_min && now_to_min <df_to_min) {
+      return true;
+    }
+    return false;
+  }

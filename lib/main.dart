@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:asiproject/constants.dart';
 import 'package:asiproject/screens/splashPage.dart';
 import 'package:asiproject/screens/homePage.dart';
-import 'package:asiproject/screens/scanPage.dart';
 
 
 void main() {
@@ -23,8 +22,6 @@ class MyApp extends StatelessWidget {
       home: SplashPage(),
       routes: {
         HomePage.id: (context) => HomePage(),
-        ScanPage.id: (context) => ScanPage(),
-
       },
     );
   }
