@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\LENOVO\\Desktop\\ESi\\_2CS 2020_2021\\Semestre 7\\ASI\\Livrables\\Projet dahak\\asiproject\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "C:\\Users\\dell\\Desktop\\DEV\\ASI-APP\\asi-project\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\Desktop\\ESi\\_2CS 2020_2021\\Semestre 7\\ASI\\Livrables\\Projet dahak\\asiproject\\build\\flutter_barcode_scanner\\intermediates\\packaged_res\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "source": "C:\\Users\\dell\\Desktop\\DEV\\ASI-APP\\asi-project\\build\\flutter_barcode_scanner\\intermediates\\packaged_res\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

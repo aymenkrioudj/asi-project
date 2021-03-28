@@ -134,46 +134,52 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  for (var i = 0; i < sessions.length; i++)
-                    Timeline(
-                      i,
-                      sessions[i].module,
-                      sessions[i].prof,
-                      sessions[i].salle,
-                      sessions[i].dateD,
-                      sessions[i].dateF,
-                    ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      for (var i = 0; i < sessions.length; i++)
+                        Timeline(
+                          i,
+                          sessions[i].module,
+                          sessions[i].prof,
+                          sessions[i].salle,
+                          sessions[i].dateD,
+                          sessions[i].dateF,
+                        ),
 
-                ],
+                    ],
+                  ),
+                ),
               ),
-              GestureDetector(
-                onTap: () {
-                  scanQR();
-                  //print(TimeOfDay.now());
-                  //Navigator.pushNamed(context, ScanPage.id);
-                },
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(5.0),
-                      child: Text(
-                        "Tap here to scan :",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width / 15,
-                        fontFamily: "Titre1",
-                        color: colorBlue2,
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    scanQR();
+                    //print(TimeOfDay.now());
+                    //Navigator.pushNamed(context, ScanPage.id);
+                  },
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text(
+                          "Tap here to scan :",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width / 15,
+                          fontFamily: "Titre1",
+                          color: colorBlue2,
+                        ),
+                        ),
                       ),
+                      Center(
+                        child:Image.asset('images/qrcode.png',
+                        width: MediaQuery.of(context).size.width / 2
+                        ),
                       ),
-                    ),
-                    Center(
-                      child:Image.asset('images/qrcode.png',
-                      width: MediaQuery.of(context).size.width / 2
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
