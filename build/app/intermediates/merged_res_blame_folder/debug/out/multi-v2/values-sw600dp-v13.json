@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dell\\Desktop\\DEV\\ASI-APP\\asi-project\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\LENOVO\\Desktop\\ESi\\_2CS 2020_2021\\Semestre 7\\ASI\\Livrables\\Projet dahak\\asiproject\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\50f23f4316049b4dbfe8a24fb2e3d1c5\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\ddecdb4f2f2c8235405c40a08fa86917\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-2\\files-2.1\\f419bf2442c9ba50831eeba89000c9a9\\appcompat-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\72e9bc9417c6c5f5cf305841afc14800\\appcompat-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

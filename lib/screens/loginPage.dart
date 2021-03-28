@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:asiproject/constants.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:asiproject/screens/homePage.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+
 
 class LoginPage extends StatefulWidget {
     static String id = "login";
@@ -11,6 +15,30 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool _isLoggedIn = false;
+
+  GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
+
+  _login() async{
+    try{
+      await _googleSignIn.signIn();
+      
+      setState(() {
+        _isLoggedIn = true;
+      });
+    } catch (err){
+      print(err);
+    }
+  }
+
+  _logout(){
+    _googleSignIn.signOut();
+    setState(() {
+      _isLoggedIn = false;
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,24 +145,26 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                               SizedBox(width:20),
                               Text('esi.dz',
-                              style: TextStyle(
-                                color: colorWhite,
-                                fontFamily: "Titre1",
-                                fontSize: MediaQuery.of(context).size.width / 20,
-                              ),
-                              ),
+                                  style: TextStyle(
+                                    color: colorWhite,
+                                    fontFamily: "Titre1",
+                                    fontSize: MediaQuery.of(context).size.width / 20,
+                                  ),
+                                ),
                             ],
                           ),
                         ),
-                        onTap: () {
-                          Navigator.pushNamed(context, HomePage.id);
+                        onTap: () async{
+                          _login();
+                          //TODO : hna li kayan prblem
+                          if(_googleSignIn !=null)
+                              Navigator.pushNamed(context, HomePage.id);
                         },
                       ),
                     ),
                 ),
                 ),
             ),
-            
           ],
         ),
       ),

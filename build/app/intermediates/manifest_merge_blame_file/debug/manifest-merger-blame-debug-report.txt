@@ -12,114 +12,221 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-65
-15-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-62
+15-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-65
+15-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-62
 16
 17    <uses-feature android:name="android.hardware.camera" />
-17-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-60
-17-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:19-57
+17-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-60
+17-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:11:19-57
 18
 19    <uses-permission android:name="android.permission.FLASHLIGHT" />
-19-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-69
-19-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-66
-20
-21    <application
-21-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:3:4-40:19
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:18-86
-23        android:debuggable="true"
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:5:9-43
-25        android:label="ScolarESI"
-25-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:4:9-34
-26        android:largeHeap="true"
-26-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
-27        android:theme="@style/Theme.AppCompat.NoActionBar" >
-27-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-59
-28        <activity
-28-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:6:9-34:20
-29            android:name="com.example.asiproject.MainActivity"
-29-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:7:13-41
-30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-30-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:10:13-163
-31            android:hardwareAccelerated="true"
-31-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:11:13-47
-32            android:launchMode="singleTop"
-32-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:8:13-43
-33            android:theme="@style/LaunchTheme"
-33-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:9:13-47
-34            android:windowSoftInputMode="adjustResize" >
-34-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:12:13-55
-35
-36            <!--
-37                 Specifies an Android theme to apply to this Activity as soon as
-38                 the Android process has started. This theme is visible to the user
-39                 while the Flutter UI initializes. After that, this theme continues
-40                 to determine the Window background behind the Flutter UI.
-41            -->
-42            <meta-data
-42-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:17:13-20:17
-43                android:name="io.flutter.embedding.android.NormalTheme"
-43-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:18:15-70
-44                android:resource="@style/NormalTheme" />
-44-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:19:15-52
-45            <!--
-46                 Displays an Android View that continues showing the launch screen
-47                 Drawable until Flutter paints its first frame, then this splash
-48                 screen fades out. A splash screen is useful to avoid any visual
-49                 gap between the end of Android's launch screen and the painting of
-50                 Flutter's first frame.
-51            -->
-52            <meta-data
-52-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:26:13-29:17
-53                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-53-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:27:15-79
-54                android:resource="@drawable/launch_background" />
-54-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:28:15-61
-55
-56            <intent-filter>
-56-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:30:13-33:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:31:17-68
-57-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:31:25-66
+19-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-69
+19-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-66
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:23:22-76
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:24:5-68
+21-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:24:22-65
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:26:22-107
+23
+24    <application
+24-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:3:4-40:19
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d481b4719f34ec119768e958e701eaf6\core-1.1.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:5:9-43
+28        android:label="ScolarESI"
+28-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:4:9-34
+29        android:largeHeap="true"
+29-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
+30        android:theme="@style/Theme.AppCompat.NoActionBar" >
+30-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-59
+31        <activity
+31-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:6:9-34:20
+32            android:name="com.example.asiproject.MainActivity"
+32-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:7:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:10:13-163
+34            android:hardwareAccelerated="true"
+34-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:11:13-47
+35            android:launchMode="singleTop"
+35-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:8:13-43
+36            android:theme="@style/LaunchTheme"
+36-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:9:13-47
+37            android:windowSoftInputMode="adjustResize" >
+37-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:12:13-55
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+45-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:17:13-20:17
+46                android:name="io.flutter.embedding.android.NormalTheme"
+46-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:18:15-70
+47                android:resource="@style/NormalTheme" />
+47-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:19:15-52
+48            <!--
+49                 Displays an Android View that continues showing the launch screen
+50                 Drawable until Flutter paints its first frame, then this splash
+51                 screen fades out. A splash screen is useful to avoid any visual
+52                 gap between the end of Android's launch screen and the painting of
+53                 Flutter's first frame.
+54            -->
+55            <meta-data
+55-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:26:13-29:17
+56                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+56-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:27:15-79
+57                android:resource="@drawable/launch_background" />
+57-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:28:15-61
 58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:32:17-76
-59-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:32:27-74
-60            </intent-filter>
-61        </activity>
-62        <!--
-63             Don't delete the meta-data below.
-64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-65        -->
-66        <meta-data
-66-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:37:9-39:33
-67            android:name="flutterEmbedding"
-67-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:38:13-44
-68            android:value="2" />
-68-->C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\android\app\src\main\AndroidManifest.xml:39:13-30
-69
-70        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
-70-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-91
-70-->[:flutter_barcode_scanner] C:\Users\dell\Desktop\DEV\ASI-APP\asi-project\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-88
-71        <activity
-71-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-72            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-72-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-73            android:exported="false"
-73-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-74-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-75
-76        <meta-data
-76-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-77            android:name="com.google.android.gms.version"
-77-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-78            android:value="@integer/google_play_services_version" />
-78-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-79    </application>
-80
-81</manifest>
+59            <intent-filter>
+59-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:30:13-33:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:31:17-68
+60-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:31:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:32:17-76
+62-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:32:27-74
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+69-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:37:9-39:33
+70            android:name="flutterEmbedding"
+70-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:38:13-44
+71            android:value="2" />
+71-->C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\android\app\src\main\AndroidManifest.xml:39:13-30
+72
+73        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+73-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-91
+73-->[:flutter_barcode_scanner] C:\Users\LENOVO\Desktop\ESi\_2CS 2020_2021\Semestre 7\ASI\Livrables\Projet dahak\asiproject\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:18:19-88
+74
+75        <service
+75-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:27:9-33:19
+76            android:name="com.google.firebase.components.ComponentDiscoveryService"
+76-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:28:13-84
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+78            android:exported="false" >
+78-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:29:13-37
+79            <meta-data
+79-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:30:13-32:85
+80                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+80-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:31:17-139
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.android.gms:play-services-measurement-api:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\63d7a7a2521f9f6bcc7ab8917213734e\jetified-play-services-measurement-api-18.0.2\AndroidManifest.xml:32:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5fe3d870dce4eed5d8b213f2bf733ca\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+83                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+83-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5fe3d870dce4eed5d8b213f2bf733ca\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\c5fe3d870dce4eed5d8b213f2bf733ca\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+85            <!--
+86                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+87                clients to use it as well, by defining this registrar in their own core/common library.
+88            -->
+89            <meta-data
+89-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+90                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+90-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+92        </service>
+93
+94        <provider
+94-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+95            android:name="com.google.firebase.provider.FirebaseInitProvider"
+95-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+96            android:authorities="com.example.asiproject.firebaseinitprovider"
+96-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+97            android:directBootAware="true"
+97-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+98            android:exported="false"
+98-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+99            android:initOrder="100" />
+99-->[com.google.firebase:firebase-common:19.5.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a348beea78586f27ffc2391bf0a13f9b\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+100
+101        <activity
+101-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+102            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+102-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+103            android:excludeFromRecents="true"
+103-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+104            android:exported="false"
+104-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+106        <!--
+107            Service handling Google Sign-In user revocation. For apps that do not integrate with
+108            Google Sign-In, this service will never be started.
+109        -->
+110        <service
+110-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+111            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+111-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+112            android:exported="true"
+112-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+113            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+113-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\19aecfb2dfedaf0e2396b3ac2e2c779a\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+114
+115        <activity
+115-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\182d559fc8f5b90b025f205266ad0e02\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+116            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+116-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\182d559fc8f5b90b025f205266ad0e02\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\182d559fc8f5b90b025f205266ad0e02\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+118            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+118-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\182d559fc8f5b90b025f205266ad0e02\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+119
+120        <receiver
+120-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:29:9-33:20
+121            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+121-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:30:13-85
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:31:13-35
+123            android:exported="false" >
+123-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:32:13-37
+124        </receiver>
+125
+126        <service
+126-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:35:9-38:40
+127            android:name="com.google.android.gms.measurement.AppMeasurementService"
+127-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:36:13-84
+128            android:enabled="true"
+128-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:37:13-35
+129            android:exported="false" />
+129-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:38:13-37
+130        <service
+130-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:39:9-43:72
+131            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+131-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:40:13-87
+132            android:enabled="true"
+132-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:41:13-35
+133            android:exported="false"
+133-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:42:13-37
+134            android:permission="android.permission.BIND_JOB_SERVICE" />
+134-->[com.google.android.gms:play-services-measurement:18.0.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\597b2f0b8c3a797cc8fdd071fd492a7a\jetified-play-services-measurement-18.0.2\AndroidManifest.xml:43:13-69
+135
+136        <meta-data
+136-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\bca6c35aaf5e106d2e94cb61e353e66b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+137            android:name="com.google.android.gms.version"
+137-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\bca6c35aaf5e106d2e94cb61e353e66b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+138            android:value="@integer/google_play_services_version" />
+138-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\bca6c35aaf5e106d2e94cb61e353e66b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+139    </application>
+140
+141</manifest>

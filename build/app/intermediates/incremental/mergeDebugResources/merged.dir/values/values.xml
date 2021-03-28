@@ -507,8 +507,14 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">660474985353-2ucrjc90jvcjjjo5fbvfm8mae86caj2a.apps.googleusercontent.com</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="gcm_defaultSenderId" translatable="false">660474985353</string>
+    <string name="google_api_key" translatable="false">AIzaSyC3X6nbs7Z1Tc9Gfur_Ul1Z6FAYGRyklLo</string>
+    <string name="google_app_id" translatable="false">1:660474985353:android:318bf7f05de435e6a2bf58</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC3X6nbs7Z1Tc9Gfur_Ul1Z6FAYGRyklLo</string>
+    <string name="google_storage_bucket" translatable="false">scolaresi.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
@@ -520,6 +526,7 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="project_id" translatable="false">scolaresi</string>
     <string name="read_barcode">Read Barcode</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>

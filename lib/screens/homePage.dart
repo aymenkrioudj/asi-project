@@ -85,74 +85,99 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: Colors.white),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
-        ),
-        automaticallyImplyLeading: false,
-        centerTitle: true,
-        title: Text(
-          'ScolarESI',
-          style: TextStyle(
-            fontSize: MediaQuery.of(context).size.height / 40,
-            fontWeight: FontWeight.normal,
-            color: colorBlue1,
-            fontFamily: "Titre1",
-          ),
-        ),
-      ),
-      body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Column(
-              children: [
-                for (var i = 0; i < sessions.length; i++)
-                  Timeline(
-                    i,
-                    sessions[i].module,
-                    sessions[i].prof,
-                    sessions[i].salle,
-                    sessions[i].dateD,
-                    sessions[i].dateF,
-                  ),
-
-              ],
+  Future<bool> _onBackPressed() {
+      return showDialog(
+        context: context,
+        builder: (context) => new AlertDialog(
+          title: new Text('Are you sure?', style: TextStyle(color: colorBlue1, fontFamily: "Titre1",fontWeight: FontWeight.bold)),
+          content: new Text('Do you want to exit an App', style: TextStyle(color: colorBlue1, fontFamily: "Titre1")),
+          actions: <Widget>[
+            new GestureDetector(
+              onTap: () => Navigator.of(context).pop(false),
+              child: Text("NO", style: TextStyle(color: colorBlue1, fontFamily: "Titre1")),
             ),
-            GestureDetector(
-              onTap: () {
-                scanQR();
-                //print(TimeOfDay.now());
-                //Navigator.pushNamed(context, ScanPage.id);
-              },
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(5.0),
-                    child: Text(
-                      "Tap here to scan :",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.width / 15,
-                      fontFamily: "Titre1",
-                      color: colorBlue2,
-                    ),
-                    ),
-                  ),
-                  Center(
-                    child:Image.asset('images/qrcode.png',
-                    width: MediaQuery.of(context).size.width / 2
-                    ),
-                  ),
-                ],
-              ),
+            SizedBox(height: 16),
+            new GestureDetector(
+              onTap: () => SystemNavigator.pop(),
+              child: Text("YES", style: TextStyle(color: colorBlue1, fontFamily: "Titre1")),
             ),
           ],
+        ),
+      ) ??
+      false;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+      onWillPop: _onBackPressed,
+          child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.white),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
+          ),
+          automaticallyImplyLeading: false,
+          centerTitle: true,
+          title: Text(
+            'ScolarESI',
+            style: TextStyle(
+              fontSize: MediaQuery.of(context).size.height / 40,
+              fontWeight: FontWeight.normal,
+              color: colorBlue1,
+              fontFamily: "Titre1",
+            ),
+          ),
+        ),
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                children: [
+                  for (var i = 0; i < sessions.length; i++)
+                    Timeline(
+                      i,
+                      sessions[i].module,
+                      sessions[i].prof,
+                      sessions[i].salle,
+                      sessions[i].dateD,
+                      sessions[i].dateF,
+                    ),
+
+                ],
+              ),
+              GestureDetector(
+                onTap: () {
+                  scanQR();
+                  //print(TimeOfDay.now());
+                  //Navigator.pushNamed(context, ScanPage.id);
+                },
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        "Tap here to scan :",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.width / 15,
+                        fontFamily: "Titre1",
+                        color: colorBlue2,
+                      ),
+                      ),
+                    ),
+                    Center(
+                      child:Image.asset('images/qrcode.png',
+                      width: MediaQuery.of(context).size.width / 2
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
