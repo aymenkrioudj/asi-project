@@ -25,7 +25,7 @@ class AuthBloc {
       print('${result.user.displayName}');
 
     } catch(error){
-      print(error.toString());
+      print(error);
     }
 
   }

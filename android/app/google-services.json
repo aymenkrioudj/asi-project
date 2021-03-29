@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "660474985353-0jc2f2658e5tejg4ce4gru4v8o7rh02q.apps.googleusercontent.com",
+          "client_id": "660474985353-53ok9r6eb2q62il6n1jdg2pao915501f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.asiproject",
-            "certificate_hash": "e4f2d866dae3f033cdf51ab6ae474f2699544fe6"
+            "certificate_hash": "9bc89386f72d4293c2d35bb9c2f481d4f02b79ad"
           }
         },
         {
