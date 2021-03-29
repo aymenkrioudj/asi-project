@@ -1,6 +1,6 @@
 # asiproject
 
-A new Flutter project.
+ScolarESI : Application mobile de gestion des absences de l'ESI.
 
 ## Getting Started
 
