@@ -2,6 +2,8 @@
 
 ScolarESI : Application mobile de gestion des absences de l'ESI.
 
+C'est une application mobile qui permet d’automatiser le processus de la saisie des absences, ainsi de minimiser à travers cette solution le risque de fautes commises afin de résoudre le problème d’absentéisme qu’est devenu une tendance pour les étudiants de l’école les dernières années.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
