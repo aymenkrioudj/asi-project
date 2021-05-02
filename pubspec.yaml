@@ -41,7 +41,7 @@ dev_dependencies:
   barcode_widget: ^2.0.1
   cool_alert: ^1.0.3
   intl: ^0.17.0
-  google_sign_in: ^5.0.1
+  google_sign_in: ^5.0.2
   firebase_auth: ^1.0.1
   firebase_core: ^1.0.2
   provider: ^5.0.0
